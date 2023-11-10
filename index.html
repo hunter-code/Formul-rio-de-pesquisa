@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alberdam">
+    <title>Formulário de pesquisa</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Formulário de pesquisa com CSS e HTML</h1>
+    <p id="description">Este é um formulário de pesquisa, que permite ao usuário inserir suas informações e teste sua 
+        validação.
+    </p>
+
+    </header>
+
+    <form id="survey-form" id="name">
+     
+     <div clas="form-group">
+        <label  id="name-label" for="name">Nome</label>
+        <input type="textt" id="name" name="name"  class="form-control" placeholder="Digite seu nome" required/>
+     </div>
+
+     <div class="form-group">
+         <label id="email-label" for="email">E-mail</label>
+         <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required>
+     </div>
+
+     <div class="form-group">
+         <label id="number-label" for="number">Idade<span class="clue"></span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Idade"/>
+
+     </div> 
+
+     <div class="form-group">
+         <p>Qual opção melhor descreve sua função atual?</p>
+        <select id="dropdown"  name="role" class="form-control" required>
+            <option disabled selected value></option>
+            <option value="Estudante">Estudante</option>
+            <option value="Trabalho">Trabalho em tempo integral</option>
+            <option value="Aprendiz">Aprendiz</option>
+            <option value="Prefiro">Prefiro não dizer</option>
+            <option value="Outro">Outro</option>
+        </select>
+    </div>
+
+        <div class="form-group">
+            <p>Você recomendaria esta empresa para um amigo?</p>
+             <label>
+                 <input 
+                        type="radio" 
+                        name="user-recommend" 
+                        value="Com certeza"
+                        class="input-radio"
+                        checked
+                 />Com certeza
+                </label>
+
+                <label>
+                    <input  
+                         type="radio"
+                         name="user-recommend"
+                        value="talvez"
+                        class="input-radio"
+                   />Talvez
+                </label>
+
+                <label>
+                  <input 
+                        type="radio"
+                        name="user-recommend"
+                        value="Não sei"
+                        class="input-radio"
+                  >Não sei
+
+                </label>
+        </div>
+
+        <div class="form-group">
+
+            <p>Qual o seu recurso favorito desta empresa?   </p>
+             
+            <select id="mostlike" name="maisGosto" class="form-control" required >
+            <option disable selected value >Selecione uma opção</option>
+            <option value="desafios">Desafios</option>
+            <option value="projetos">Projetos</option>
+            <option value="comunidade">Comunidade</option>
+            <option value="codigoaberto">Código Aberto</option>
+            </select>
+         </div>
+         
+         <div class="form-group">
+             <p>O que gostaria de ver melhorado? </p>
+              <label>
+                  <input type="checkbox"
+                         name="prefer" 
+                         value="projeto-front-end"
+                         class="input-checkbox"
+                  >Projeto front-end
+              </label>
+                        <!--label concluído-->
+              <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="projeto-back-end"
+                       class="input-checkbox"
+                >Projeto back-end
+            </label>
+                    <!--label concluído-->
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="visualização-de-dados"
+                       class="input-checkbox"
+                >Visualização de dados
+            </label>
+                      <!--label concluído-->
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="desafios"
+                       class="input-checkbox"
+                >Desafios
+            </label>    
+
+                   <!--label concluído-->
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="codigo-aberto"
+                       class="input-checkbox"
+                >Código aberto
+            </label>
+                  <!--label concluído-->    
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="sala-de-ajuda"
+                       class="input-checkbox"
+                >Sala de ajuda
+            </label>
+                  <!--label concluído--> 
+
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="videos"
+                       class="input-checkbox"
+                >Vídeos
+            </label>
+                    <!--label concluído--> 
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="Encontros-na-cidade"
+                       class="input-checkbox"
+                >Encontros na cidade
+            </label>
+                    <!--label concluído-->
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="colaborativa"
+                       class="input-checkbox"
+                >Colaborativa   
+            </label>
+                  <!--label concluído-->
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="forum"
+                       class="input-checkbox"
+                >Fórum
+            </label>
+                 <!--label concluído-->
+            <label>
+                <input type="checkbox"
+                       name="prefer" 
+                       value="cursos-complementares"
+                       class="input-checkbox"
+                >Cursos complementares
+            </label>
+         </div>
+        
+        <div class="form-group">
+            <p>Algum comentário ou sugestão?</p>
+            <textarea name="comentario" id="comments" class="input-textarea"placeholder="Contribua com seu comentário ou sugestão"></textarea>
+        </div>
+        <div class="form-group">
+
+            <button type="submit" id="submit" class="submit-button">Enviar</button>
+        </div>
+
+       
+
+    </form>
+    
+</body>
+</html>
